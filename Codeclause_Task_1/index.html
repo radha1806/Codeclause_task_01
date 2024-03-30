@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div id="left">
+          <h1>N.<span>G</span></h1>
+        </div>
+        <div id="right">
+          <button>LOGIN</button>
+        </div>
+      </div>
+      <div id="heading">
+        <h1>The N.G Blog</h1>
+        <h5>Your source of great content</h5>
+      </div>
+      <div class="links">
+        <!-- <a href="">All,design,tech,mobile</a> -->
+        <button onclick="filterBlogs('all')" class="btn" id="allButton">
+          All
+        </button>
+        <button onclick="filterBlogs('tech')" class="btn" id="techButton">
+          Tech
+        </button>
+        <button onclick="filterBlogs('design')" class="btn" id="designButton">
+          Design
+        </button>
+        <button onclick="filterBlogs('mobile')" class="btn" id="mobileButton">
+          Mobile
+        </button>
+      </div>
+
+      <!-- blogs container-->
+
+      <div id="blogs">
+        <div class="blog" data-category="tech">
+          <img
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h5 class="category">tech</h5>
+          <a href="/pages/tech.html"
+            ><h3>How To Create UX Design With Adobe XD</h3></a
+          >
+          <h6>12 FEB 2024</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            placeat? Saepe repellat libero eaque rerum velit voluptatum error
+            quae ipsam.
+          </p>
+        </div>
+        <div class="blog" data-category="design">
+          <img
+            src="https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h5 class="category">design</h5>
+          <a href="pages/design.html"
+            ><h3>How To Create UX Design With Adobe XD</h3></a
+          >
+          <h6>12 FEB 2024</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            esse rerum quis eveniet veritatis voluptas iure sint? Nostrum, odio
+            inventore.
+          </p>
+        </div>
+        <div class="blog" data-category="mobile">
+          <img
+            src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h5 class="category">mobile</h5>
+          <a href="pages/mobile.html"
+            ><h3>How To Create UX Design With Adobe XD</h3></a
+          >
+          <h6>12 FEB 2024</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            doloribus nemo voluptatem optio impedit quasi officia natus deserunt
+            tempore aperiam.
+          </p>
+        </div>
+        <div class="blog" data-category="tech">
+          <img
+            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h5 class="category">tech</h5>
+          <a href="pages/tech2.html"
+            ><h3>How To Create UX Design With Adobe XD</h3></a
+          >
+          <h6>12 FEB 2024</h6>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            tempora voluptatem eaque, quae saepe velit? Cum quae aliquid dolorem
+            corrupti.
+          </p>
+        </div>
+        <div class="blog" data-category="design">
+          <img
+            src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h5 class="category">design</h5>
+          <a href="pages/design2.html"
+            ><h3>How To Create UX Design With Adobe XD</h3></a
+          >
+          <h6>12 FEB 2024</h6>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non est
+            temporibus et. Tenetur eius facere ducimus aperiam praesentium. Ad,
+            vel!
+          </p>
+        </div>
+        <div class="blog" data-category="mobile">
+          <img
+            src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <h5 class="category">mobile</h5>
+          <a href="pages/mobile2.html"
+            ><h3>How To Create UX Design With Adobe XD</h3></a
+          >
+          <h6>12 FEB 2024</h6>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non est
+            temporibus et. Tenetur eius facere ducimus aperiam praesentium. Ad,
+            vel!
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h5>&copy;Copyrights reserved to N.G_Blogs.com</h5>
+        <div class="icons">
+          <i class="ri-github-fill"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-twitter-line"></i>
+          <i class="ri-linkedin-fill"></i>
+          <i class="ri-facebook-circle-fill"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

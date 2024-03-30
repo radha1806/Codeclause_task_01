@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #8c8e90;
+}
+.main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8c8e90;
+  padding: 2vh;
+  z-index: 9999;
+}
+.nav .left {
+  position: absolute;
+  left: 0%;
+  /* background-color: green; */
+  width: 50%;
+  padding-left: 4vh;
+}
+.nav .left span {
+  color: #ff9948;
+}
+.nav .right {
+  display: flex;
+  position: absolute;
+  right: 0%;
+  /* background-color: red; */
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 4vh;
+}
+.nav .right button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  color: white;
+  background-color: #ff9948;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  /* box-shadow: 0 9px #999; */
+  /* text-decoration: none; */
+}
+.nav .right button:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px #423f3f;
+  transform: translateY(4px);
+}
+.nav .right button:hover {
+  /* background-color: aqua; */
+  color: #1a1e21;
+}
+#heading {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 65vh;
+  background-color: #1a1e21;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  overflow: hidden;
+}
+#heading img {
+  width: 60vh;
+  height: 30vh;
+  border-radius: 10px;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+}
+.content {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  left: 0%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 80vh;
+  /* padding: 20px 30px; */
+  gap: 2vh;
+}
+.content h1 {
+  /* padding: 0 40px; */
+}
+.content p {
+  text-align: left;
+  font-size: 20px;
+  padding: 0 40px;
+}
+.content .cmnts {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-height: 300px;
+  gap: 10px;
+  background-color: #ff9a48;
+}
+.content .cmnts {
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+.content .cmnts .cmnt h3{
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.content .cmnts #btn {
+  width: 30%;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0px 30px;
+}
+.content .cmnts #txt{
+  font-size: 1.2rem;
+  font-size: 400;
+}
+
+.hidden {
+  display: none;
+}
+/* .footer {
+  display: flex;
+  position: absolute;
+  align-content: flex-end;
+  bottom: -180%;
+  left: 0%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  color: #fbfdff;
+  background-color: #1a1e21;
+  justify-content: space-between;
+  padding: 20px 30px;
+} */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 9vh;
+  bottom: 0%;
+  left: 0%;
+  padding: 20px 30px;
+  background-color: red;
+  z-index: 9999;
+}
+.footer .icons {
+  display: flex;
+  gap: 2vh;
+}
+.footer .icons i:hover {
+  color: #ff9948;
+}
